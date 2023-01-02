@@ -1,25 +1,39 @@
 body {
+    background-image: linear-gradient(to left top, #3f0000, #742712, #a55515, #ce8a0f, #ebc512);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#body_{
+    max-width: 100%;
     margin: 0;
     padding: 0;
     font-family: monospace;
 }
-
-#title{
-    font-size: 2rem;
+#one{
+    background-image: url(https://marmotamaps.com/de/fx/wallpaper/download/faszinationen/Marmotamaps_Wallpaper_Berchtesgaden_Desktop_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.title{
+    font-size: 3rem;
     background-color: antiquewhite;
     margin-top: 0;
     border-radius: 5px;
 }
-
 div {
-    background-color: yellow;
-    padding: 1rem 35%;
+    padding: 1rem 25%;
     border-radius: 1rem;
     text-align: center;
 }
 
 ul {
     padding: 0 5%;
+    font-size: 1.5rem;
 }
 
 ul>li {
@@ -30,5 +44,42 @@ ul>li {
     border-radius: 5px;
 }
 ul>li:hover{
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.596);
+    color: white;
+}
+#two{
+    background-image: url(https://wonderfulengineering.com/wp-content/uploads/2016/02/wallpaper-background-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#two div{
+    padding: 1rem 10%;
+}
+.f_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content{
+    background-color: #dab36b;
+    height: 150px;
+    margin:0 20px;
+    border: 3px solid black;
+    display: grid;
+    align-items: center;
+}
+.content:hover{
+    background-color: black;
+    border:3px dashed white;
+    color: white;
+}
+.btn_two:hover{
+    background-color: #fdc04f;
+    padding: 0.5rem  1rem;
+    border-radius: 10px;
+    font-family: monospace;
+    border: 2px solid white;
+
 }
