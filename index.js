@@ -29,3 +29,14 @@ const select = document.querySelectorAll('p.hello');
 for(let element of select){
     console.log(element.innerText)
 }
+/************FORMULARIO**************/
+function mostrarValores(){
+    let formulario = document.forms['Form'];
+    let text='';
+    for(let elemento of formulario){
+        text+=elemento.value+' ';
+    }
+    text=`Hola ${text} :D`;
+    document.getElementById('saludo').innerHTML = text;
+    //console.log(text);
+}

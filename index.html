@@ -10,48 +10,68 @@
 </head>
 
 <body>
-    <form action="">
-        <div id="body_">
-            <section id="one">
-                <div class="contenedor">
-                    <h1 id="title" class="title">DOM</h1>
-                    <ul class="list">
-                        <li class="list_text">DocumentById</li>
-                        <li class="list_text">DocumentByClassName</li>
-                        <li class="list_text">DOcumetByTagName</li>
-                        <li class="list_text">QuerrySelector</li>
-                        <li class="list_text">QuerrySelectorAll</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="two">
-                <div class="contenedor">
-                    <h1 id="title_Two" class="title">EVENT LISTENERS</h1>
-                    <div class="f_content">
-                        <div class="content">
-                            HOLA
-                            <button class="btn_two">Enter</button>
-                        </div>
-                        <div class="content">
-                            HOLA 2
-                            <button class="btn_two">Enter</button>
-                        </div>
-                        <div class="content">
-                            HOLA 3
-                            <button class="btn_two">Enter</button>
-                        </div>
+    <div id="body_">
+        <section id="one">
+            <div class="contenedor">
+                <h1 id="title" class="title">DOM</h1>
+                <ul class="list">
+                    <li class="list_text">DocumentById</li>
+                    <li class="list_text">DocumentByClassName</li>
+                    <li class="list_text">DOcumetByTagName</li>
+                    <li class="list_text">QuerrySelector</li>
+                    <li class="list_text">QuerrySelectorAll</li>
+                </ul>
+            </div>
+        </section>
+        <section id="two">
+            <div class="contenedor">
+                <h1 id="title_Two" class="title">EVENT LISTENERS</h1>
+                <div class="f_content">
+                    <div class="content">
+                        HOLA
+                        <button class="btn_two">Enter</button>
+                    </div>
+                    <div class="content">
+                        HOLA 2
+                        <button class="btn_two">Enter</button>
+                    </div>
+                    <div class="content">
+                        HOLA 3
+                        <button class="btn_two">Enter</button>
                     </div>
                 </div>
-            </section>
-            <section id="three">
-                <div class="contenedor">
-                    <h1 id="title_three" class="title">PRUEBAS</h1>
-                    <p class="hello">hola</p>
-                    <p class="hello">hola 2</p>
+            </div>
+        </section>
+        <section id="three">
+            <div class="contenedor">
+                <h1 id="title_three" class="title">PRUEBAS</h1>
+                <p class="hello">hola</p>
+                <p class="hello">hola 2</p>
+            </div>
+            
+        </section>
+        <section id="for">
+            <form id="Form" action="">
+                <div class="formulario">
+                    <h1 class="form_title">FORMULARIO DE CONTACTO</h1>
+                    <div class="form_content">
+                        <label for="name">Name</label><input id="name" type="text">
+                        <br>
+                        <label for="lastName">Last Name</label><input type="text" id="lastName">
+                        <br>
+                        <label for="address">Address</label><input type="text" id="address">
+                        <br>
+                        <label for="email">Email</label><input id="email" type="email">
+                        <br>
+                        <label for="date">Date</label><input type="date" name="" id="date">
+                        <br>
+                        <button id="salud" onclick="mostrarValores()">ENVIAR</button>
+                    </div>
                 </div>
-            </section>
-        </div>
-    </form>
+            </form>
+            <div id="saludo" style="color: white;"></div>
+        </section>
+    </div>
     <script src="./index.js"></script>
 </body>
 
