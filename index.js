@@ -10,42 +10,53 @@ console.log(`El titulo 2 es: ${titulo_2.textContent}`);
 console.log(`GetElementByTagName`)
 const titulo_3 = document.getElementById("title_three");
 console.log(`El titulo 3 es: ${titulo_3.innerText}`);
-const metodotag= document.getElementsByTagName('section');
+const metodotag = document.getElementsByTagName('section');
 console.log(`Numero de tag:${metodotag.length}`)
-for(let i=0; i<metodotag.length; i++){
+for (let i = 0; i < metodotag.length; i++) {
     console.log(`${metodotag[i].innerText}`);
-    if(i=metodotag.length)
+    if (i = metodotag.length)
         console.log('Final de la busqueda')
 }
 //GetElementByClassName
 console.log(`GetElementByClassName`)
 const elements = document.getElementsByClassName('hello');
-for(let element of elements){
+for (let element of elements) {
     console.log(element.innerText)
 }
 //QuerrySelectorAll
 console.log(`QuerrySelectorAll`)
 const select = document.querySelectorAll('p.hello');
-for(let element of select){
+for (let element of select) {
     console.log(element.innerText)
 }
 /************FORMULARIO**************/
-function mostrarValores(){
+function mostrarValores() {
     let formulario = document.forms['Form'];
-    let text='';
-    let nombre=formulario['name'];
-    let apellido=formulario['lastName'];
-    text=`Hola ${nombre.value} ${apellido.value} :D`;
-    let mensaje=document.getElementById('saludo');
-    if(nombre.value!=''){
+    let text;
+    let name = formulario['name'];
+    let lastName = formulario['lastName'];
+    let address = formulario['address'];
+    let email = formulario['email'];
+    let date = formulario['date'];
+    text = `Hola ${name.value} ${lastName.value} :D <br>
+    Direccion: ${address.value} <br>
+    Email: ${email.value} <br>
+    Fecha: ${date.value}
+    `;
+    let message = document.getElementById('saludo');
+    if (name.value != '' && lastName.value != '' && address.value != '' && email.value != '' && date.value != '') {
         document.getElementById('saludo').innerHTML = text.toUpperCase();
-        mensaje.style='visibility: visible;'
-    }else{
-        document.getElementById('saludo').innerHTML = 'FAVOR RELLENAR TODOS LOS CAMPOS';
-        mensaje.style=`
+        message.style =  `
         visibility: visible;
-        padding: 1rem 8.5%
+        padding: 8.1% 17.8%
+        `
+    } else {
+        document.getElementById('saludo').innerHTML = 'FAVOR RELLENAR TODOS LOS CAMPOS';
+        message.style = `
+        visibility: visible;
         `
     }
-
+}
+function touch() {
+    document.getElementById('saludo').style = 'visibility: hidden;';
 }

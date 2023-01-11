@@ -119,12 +119,14 @@ ul>li:hover {
 
 /*********FORMULARIO********/
 #for {
-    padding: 1rem 20%;
+    padding: 2rem 20%;
     text-align: center;
 }
 
 .formulario {
     background-color: #fdc04f;
+    padding: 1rem 10% 2rem;
+    
 }
 
 .form_title {
@@ -134,13 +136,17 @@ ul>li:hover {
 .form_content {
     background-color: #ffcf76;
     line-height: 2.5;
+    padding: 0;
+    font-size: 1.6rem;
 }
 
 .form_content>label {
     color: white;
     text-shadow: 3px 1px 2px rgb(0, 0, 0);
     margin-right: 1rem;
-
+}
+.form_content>input{
+    font-size: 1.3rem;
 }
 
 #salud {
@@ -154,17 +160,13 @@ ul>li:hover {
     cursor: pointer;
 }
 
-/********/
+/****Mensaje****/
 #saludo {
     background-color: #ffffff;
     position: absolute;
-    display: grid;
-    padding: 1rem 16.2%;
-    bottom: -25.5rem;
-    height: 20rem;
-    width: auto;
-    font-size: 3rem;
-    place-items: center;
+    bottom: -35.5rem;
+    padding: 11.8% 12.1%;
+    font-size: 2.5rem;
     visibility: hidden;
     opacity: 0.9;
 }
