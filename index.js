@@ -33,10 +33,19 @@ for(let element of select){
 function mostrarValores(){
     let formulario = document.forms['Form'];
     let text='';
-    for(let elemento of formulario){
-        text+=elemento.value+' ';
+    let nombre=formulario['name'];
+    let apellido=formulario['lastName'];
+    text=`Hola ${nombre.value} ${apellido.value} :D`;
+    let mensaje=document.getElementById('saludo');
+    if(nombre.value!=''){
+        document.getElementById('saludo').innerHTML = text.toUpperCase();
+        mensaje.style='visibility: visible;'
+    }else{
+        document.getElementById('saludo').innerHTML = 'FAVOR RELLENAR TODOS LOS CAMPOS';
+        mensaje.style=`
+        visibility: visible;
+        padding: 1rem 8.5%
+        `
     }
-    text=`Hola ${text} :D`;
-    document.getElementById('saludo').innerHTML = text;
-    //console.log(text);
+
 }

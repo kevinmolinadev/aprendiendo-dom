@@ -103,10 +103,12 @@ ul>li:hover {
     background-size: cover;
     background-attachment: fixed;
 }
-#three>div{
-    padding:1rem 25%
+
+#three>div {
+    padding: 1rem 25%
 }
-.hello{
+
+.hello {
     font-size: 1.5rem;
     background-color: #b9d89d;
     margin: 1rem 30%;
@@ -114,33 +116,55 @@ ul>li:hover {
     border-radius: 0 25%;
     border: double 4px white
 }
+
 /*********FORMULARIO********/
-#for{
+#for {
     padding: 1rem 20%;
+    text-align: center;
 }
-.formulario{
+
+.formulario {
     background-color: #fdc04f;
 }
-.form_title{
+
+.form_title {
     font-size: 2.8rem;
 }
-.form_content{
+
+.form_content {
     background-color: #ffcf76;
     line-height: 2.5;
 }
-.form_content>label{
+
+.form_content>label {
     color: white;
     text-shadow: 3px 1px 2px rgb(0, 0, 0);
     margin-right: 1rem;
 
 }
-.form_content #salud{
+
+#salud {
     background-color: #b9d89d;
     padding: 0.5rem 3rem;
     margin-top: 1rem;
     border-radius: 15%;
 }
-.form_content #salud:hover{
+
+#salud:hover {
     cursor: pointer;
 }
 
+/********/
+#saludo {
+    background-color: #ffffff;
+    position: absolute;
+    display: grid;
+    padding: 1rem 16.2%;
+    bottom: -25.5rem;
+    height: 20rem;
+    width: auto;
+    font-size: 3rem;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0.9;
+}
