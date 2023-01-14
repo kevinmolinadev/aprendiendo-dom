@@ -181,3 +181,20 @@ ul>li:hover {
     visibility: hidden;
     opacity: 0.9;
 }
+/****Eventos****/
+#Five{
+    background-image: url(https://wallpapercave.com/wp/wp4755253.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eventos_js{
+    background-color: #f8ffd3;
+    opacity: 0.7;
+    padding: 2% 1%;
+    border-radius: 0;
+}
+.eventos_js>p{
+    font-size: 1.5rem;
+
+}

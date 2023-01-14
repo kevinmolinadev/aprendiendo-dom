@@ -46,7 +46,7 @@ function mostrarValores() {
     let message = document.getElementById('saludo');
     if (name.value != '' && lastName.value != '' && address.value != '' && email.value != '' && date.value != '') {
         document.getElementById('saludo').innerHTML = text.toUpperCase();
-        message.style =  `
+        message.style = `
         visibility: visible;
         padding: 8.1% 17.8%
         `
@@ -57,6 +57,49 @@ function mostrarValores() {
         `
     }
 }
+document.getElementById('saludo').onclick = touch;
 function touch() {
     document.getElementById('saludo').style = 'visibility: hidden;';
 }
+/*****Eventos*****/
+function mayuscula(texto) {
+    texto.innerHTML = texto.innerHTML.toUpperCase();
+    texto.style = `
+    color:red;
+    `
+
+}
+function minuscula(texto) {
+    texto.innerHTML = texto.innerHTML.toLowerCase();
+    texto.style = `
+    color:black;
+    `
+}
+//Uso de addeventlistener
+document.getElementById('f-b').addEventListener('focus', yellow);
+document.getElementById('f-b').addEventListener('blur', white);
+function yellow(canbiar) {
+    canbiar.target.style = `
+    background-color: yellow;
+    `
+}
+function white(canbiar) {
+    canbiar.target.style = `
+    background-color: white;
+    `
+}
+
+//Uso de addeventlistener con =>, estas funciones no se pueden reutilizar 
+document.getElementById('f-b-af').addEventListener('focus', (evento)=>{evento.target.style=`background-color: green;`});
+document.getElementById('f-b-af').addEventListener('blur', (evento)=>{evento.target.style=`background-color: white;`});
+
+//OnCapture
+const form=document.getElementById('form');
+form.addEventListener(
+    'focus', (evento)=>{
+        evento.target.style=`background-color: grey; color:white;`
+    }, true); //Cuando definimos el true, estamos permitiendo pasasr las deficiones a los elementos internos
+form.addEventListener(
+    'blur', (evento)=>{
+        evento.target.style=`background-color: white;`
+    }, true);

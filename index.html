@@ -9,7 +9,7 @@
     <title>MANEJO DE DOM</title>
 </head>
 
-<body>
+<body onload="open()">
     <div id="body_">
         <section id="one">
             <div class="contenedor">
@@ -66,9 +66,55 @@
                         <label for="date">Date</label><input name="date" type="date" id="date">
                     </div>
                 </div>
-                <div onclick="touch()" id="saludo"></div> 
+                <div id="saludo"></div>
             </form>
             <button id="salud" onclick="mostrarValores()">ENVIAR</button>
+        </section>
+        <section id="Five">
+            <div class="Eventos">
+                <h1 class="title">EVENTOS JS </h1>
+                <div class="Eventos_content">
+                    <div class="eventos_js">
+                        <p>
+                            onLoad > Util para mostrar contenido al inicar la pagina
+                        </p>
+                    </div>
+                    <div class="eventos_js">
+                        <p>
+                            onChange > Realiza la accion al salir del tag asignado
+                        </p>
+                    </div>
+                    <div class="eventos_js">
+                        <p onmouseover="mayuscula(this)" onmouseout="minuscula(this)">
+                            onMouseOver and onMouseOut
+                        </p>
+                    </div>
+                    <div class="eventos_js">
+                        <p onmousedown="mayuscula(this)" onmouseup="minuscula(this)">
+                            onMouseDown and onMouseUp
+                        <p>
+                    </div>
+                    <div class="eventos_js">
+                        <p>
+                            Focus and blur
+                            <br>
+                            <input type="text" id="f-b">
+                            <br>
+                            <input type="text" id="f-b-af">
+                        </p>
+                    </div>
+                    <div class="eventos_js">
+                        <p>
+                            OnCapture > permite heredar las definiciones a los elementos internos
+                        <form action="" id="form">
+                            Name: <input type="text">
+                            <br><br>
+                            LastName: <input type="text">
+                        </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <script src="./index.js"></script>
